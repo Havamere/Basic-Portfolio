@@ -1,3 +1,24 @@
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+	width: 960px;
+}
+
+.footer, .push {
+	height: 4em;
+}
+
+
 body {
 	background-image: url("../../assets/images/concrete_seamless.png");
 	margin:0;
@@ -9,6 +30,7 @@ header {
 	background-color: white;
 	color: white;
 	top: 0;
+	width: 100%;
 }
 
 p {
@@ -122,8 +144,10 @@ p {
 }
 
 #hangman {
-	position: relative;
+	float: left;
 	margin: 20px 10px 10px 0px;
+	height: 150px;
+	width: 150px;
 }
 
 #hangman-tag {
@@ -132,7 +156,6 @@ p {
 	height: 30px;
 	color: white;
 	float: left;
-	position: absolute;
 	text-align: center;
 	padding-top: 10px;
 	top: 265px;
@@ -140,8 +163,10 @@ p {
 }
 
 #rpg {
-	position: relative;
+	float: left;
 	margin: 20px 20px 10px 10px;
+	height: 150px;
+	width: 150px;
 }
 
 #rpg-tag {
@@ -150,7 +175,6 @@ p {
 	height: 30px;
 	color: white;
 	float: left;
-	position: absolute;
 	text-align: center;
 	padding-top: 10px;
 	top: 265px;
@@ -158,8 +182,10 @@ p {
 }
 
 #trivia {
-	position: relative;
+	float: left;
 	margin: 20px 10px 10px 0px;
+	height: 150px;
+	width: 150px;
 }
 
 #trivia-tag{
@@ -168,7 +194,6 @@ p {
 	height: 30px;
 	color: white;
 	float: left;
-	position: absolute;
 	text-align: center;
 	padding-top: 10px;
 	top: 450px;
@@ -176,8 +201,10 @@ p {
 }
 
 #rutgers {
-	position: relative;
+	float: left;
 	margin: 20px 20px 10px 10px;
+	height: 150px;
+	width: 150px;
 }
 
 #rutgers-tag {
@@ -186,16 +213,15 @@ p {
 	height: 30px;
 	color: white;
 	float: left;
-	position: absolute;
 	text-align: center;
 	padding-top: 10px;
-	top: 450px;
-	left: 294px;
 }
 
 #r-p-s {
-	position: relative;
+	float: left;
 	margin: 20px 10px 10px 0px;
+	height: 150px;
+	width: 150px;
 }
 
 #r-p-s-tag {
@@ -204,11 +230,8 @@ p {
 	height: 30px;
 	color: white;
 	float: left;
-	position: absolute;
 	text-align: center;
 	padding-top: 10px;
-	top: 635px;
-	left: 120px;
 }
 
 footer{
