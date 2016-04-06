@@ -2,8 +2,31 @@
 	margin: 0;
 }
 
-html, body {
+html {
 	height: 100%;
+}
+
+h1 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: white;	
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: teal;
+}
+
+p, li {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777;
+}
+
+ul {
+	height: 20px;
+}
+
+li {
+	padding: 10px;
 }
 
 .wrapper {
@@ -11,7 +34,7 @@ html, body {
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -4em;
-	width: 960px;
+	width: 100%;
 }
 
 .footer, .push {
@@ -27,10 +50,12 @@ body {
 }
 
 header {
-	background-color: white;
+	background-color: #fff;
 	color: white;
 	top: 0;
 	width: 100%;
+	border-bottom: 2px;
+	border-color: #ccc;
 }
 
 p {
@@ -44,10 +69,15 @@ p {
 	width: 150px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	margin-top: 0;
-
 }
 
-.container {
+.sidebar {
+	width: 270px;
+	float: right;
+	right: 200px;
+}
+
+.about_me {
 	margin: 20px 10px 20px 100px;
 	max-width: 45%;
 	background-color: white;
@@ -74,37 +104,34 @@ p {
 .links {
 	float: left;
 	margin-right: 5%;
-	width: 200px;
+	width: 270px;
 	color: gray;
-	position: absolute;
 	top: 0;
-	right: 20px;
+	right: 0;
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	height: 0;
+	position: absolute;
 }
 
 #about {
 	float: left;
-	width: 27%;
 	text-align: center;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 #portfolio {
 	float: left;
-	width: 40%;
 	text-align: center;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 #contact {
 	float: left;
-	width: 33%;
 	text-align: center;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 .connections {
-	position: absolute;
 	top: 80px;
 	right: 20px;
 	background-color: white;
@@ -143,6 +170,12 @@ p {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+.port-row-1 {
+	width: 370px;
+	height: 180px;
+	float: left;
+}
+
 #hangman {
 	float: left;
 	margin: 20px 10px 10px 0px;
@@ -151,15 +184,17 @@ p {
 }
 
 #hangman-tag {
-	background-color: teal;
+	background-color: #4aaaa5;
 	width: 150px;
 	height: 30px;
 	color: white;
 	float: left;
 	text-align: center;
 	padding-top: 10px;
-	top: 265px;
+	top: 215px;
 	left: 120px;
+	z-index: 2;
+	position: absolute;
 }
 
 #rpg {
@@ -170,15 +205,24 @@ p {
 }
 
 #rpg-tag {
-	background-color: teal;
+	background-color: #4aaaa5;
 	width: 150px;
 	height: 30px;
 	color: white;
 	float: left;
 	text-align: center;
 	padding-top: 10px;
-	top: 265px;
-	left: 294px;	
+	top: 215px;
+	left: 290px;
+	z-index: 2;
+	position: absolute;
+
+}
+
+.port-row-2 {
+	width: 370px;
+	height: 180px;
+	float: left;
 }
 
 #trivia {
@@ -189,15 +233,17 @@ p {
 }
 
 #trivia-tag{
-	background-color: teal;
+	background-color: #4aaaa5;
 	width: 150px;
 	height: 30px;
 	color: white;
 	float: left;
 	text-align: center;
 	padding-top: 10px;
-	top: 450px;
+	top: 395px;
 	left: 120px;
+	z-index: 2;
+	position: absolute;
 }
 
 #rutgers {
@@ -208,13 +254,23 @@ p {
 }
 
 #rutgers-tag {
-	background-color: teal;
+	background-color: #4aaaa5;
 	width: 150px;
 	height: 30px;
 	color: white;
 	float: left;
 	text-align: center;
 	padding-top: 10px;
+	top: 395px;
+	left: 290px;
+	z-index: 2;
+	position: absolute;
+}
+
+.port-row-3 {
+	width: 370px;
+	height: 180px;
+	float: left;
 }
 
 #r-p-s {
@@ -225,13 +281,21 @@ p {
 }
 
 #r-p-s-tag {
-	background-color: teal;
+	background-color: #4aaaa5;
 	width: 150px;
 	height: 30px;
 	color: white;
 	float: left;
 	text-align: center;
 	padding-top: 10px;
+	top: 575px;
+	left: 120px;
+	z-index: 2;
+	position: absolute;
+}
+
+.contact_me-tag {
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 footer{
@@ -242,13 +306,13 @@ footer{
 }
 
 .small_bar {
-	background-color: teal;
+	background-color: #4aaaa5;
 	height: 4px;
 	width: 100%
 }
 
 .large_bar {
-	background-color: black;
+	background-color: #666;
 	height: 40px;
 	width: 100%;
 }
