@@ -112,13 +112,14 @@ header {
 	z-index: 99;
 	overflow: auto;
 	width: 100%;
+	height: auto;
 	border-bottom: 2px solid #ccc;
 	position: fixed;
 }
 
 #name_tag {
 	background-color: #4aaaa5;
-	margin: 0 0 0 100px;
+	margin: 0 0 0 0;
 	width: 250px;
 	height: 90px;
 	color: #fff;
@@ -346,8 +347,15 @@ footer {
 } 
 
 @media screen and (max-width: 768px) {
+	.main-section,
 	.sidebar {
+		max-width: 95%;
+    	width: 100%;
+    	margin: 20px;
 		clear: both;
+	}
+	.connections {
+		float: left;
 	}
 	.about_me {
 		clear: both;
@@ -379,6 +387,9 @@ footer {
 	}
 
 	.sidebar {
+		max-width: 95%;
+    	width: 100%;
+    	margin: 0 10px;
 		clear: left;
 	}
 	.connections {
