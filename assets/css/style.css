@@ -209,7 +209,6 @@ nav a:first-child {
 .connections {
 	float: right;
 	background-color: white;
-	padding: 20px;
 	color: gray;
 	height: 100%;
 	width: 100%;
@@ -342,8 +341,32 @@ footer {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-@media screen and (max-width: 980px) {
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    75%  {background-color: green;}
+    100% {background-color: red;}
+}
 
+#hypno-block {
+	height: 274px;
+    width: 100%;
+    opacity: 0.8;
+    border: 0 none;
+    background-color: red;
+    animation: example 5s linear 2s infinite alternate;
+}
+
+
+
+@media screen and (max-width: 980px) {
+	.main-section {
+		max-width: 60%;
+	}
+	.sidebar {
+		max-width: 30%;
+	}
 } 
 
 @media screen and (max-width: 768px) {
@@ -399,5 +422,10 @@ footer {
 	.portfolio {
 		clear: right;
 	}
-
+	#main-container {
+		padding-top: 10px;
+	}
+	#kyle {
+		width: 100%;
+	}
 }
